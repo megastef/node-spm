@@ -1,0 +1,35 @@
+{
+  "name": "node-spm",
+  "version": "1.0.0",
+  "description": "custom metrics API for SEMATEXT SPM ",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/megastef/node-spm.git"
+  },
+  "keywords": [
+    "SPM",
+    "Sematext",
+    "performance",
+    "monitoring",
+    "memwatch"
+  ],
+  "author": "Stefan Thies",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/megastef/node-spm/issues"
+  },
+  "homepage": "https://github.com/megastef/node-spm",
+  "dependencies": {
+    "request": "*"
+   },
+    "devDependencies": {
+        "mocha": "*"
+    }
+}
