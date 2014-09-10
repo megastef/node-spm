@@ -1,6 +1,6 @@
 {
   "name": "node-spm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "custom metrics API for SEMATEXT SPM ",
   "main": "lib/index.js",
   "directories": {
