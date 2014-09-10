@@ -19,7 +19,7 @@ var spmcm = new spmcm(token, 30000)
 spmcm.collectProcessMetrics()
 // or log your custom metrics, relevant for your application
 spmcm.add (new Date().getTime(), 'user.active',232,'server=server1')
-// send the collected data point to sematext big data platform
+// send the collected data points to sematext big data platform
 spmcm.send()
 // log an event to SPM Events
 spmcm.logEvent ('test1', 'High', 'this is an event message', 'testing is the event name', ['test', 'node-spm'], 'event source', 'this is any data as string or base64 encoded', function (err,res) {
@@ -28,4 +28,4 @@ spmcm.logEvent ('test1', 'High', 'this is an event message', 'testing is the eve
 })
 ```
 
-
+Enjoy nice graphs and analytics of your application metrics  [http://sematext.com/spm/index.html](http://sematext.com/spm/index.html)
