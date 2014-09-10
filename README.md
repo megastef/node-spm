@@ -15,7 +15,9 @@ var spmcm = new spmcm(token, 30000)
 spmcm.collectProcessMetrics()
 // or log your custom metrics, relevant for your application
 spmcm.add (new Date().getTime(), 'user.active',232,'server=server1')
-// send the collected data point to sematext big data platform
+// send the collected data points to sematext big data platform
 spmcm.send()
 
 ```
+
+Enjoy nice visialisation and analytics of your application metrics  [http://sematext.com/spm/index.html](http://sematext.com/spm/index.html)
