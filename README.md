@@ -7,7 +7,7 @@ Get an account and API token at [www.sematext.com](http://www.sematext.com)
 ```
 
 var spmcm = require('node-spm')
-// YOUR API TAKEN (SPM App)
+// YOUR API TOKEN (SPM App)
 var token = process.env.TOKEN
 // create client, automatically log node.js memory and CPU usage every 30 seconds
 var spmcm = new spmcm(token, 30000)
