@@ -1,6 +1,6 @@
 {
   "name": "node-spm",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "custom metrics API for SEMATEXT SPM ",
   "main": "lib/index.js",
   "directories": {
@@ -27,7 +27,8 @@
   },
   "homepage": "https://github.com/megastef/node-spm",
   "dependencies": {
-    "request": "*"
+    "request": "*",
+    "ip": "*"
    },
     "devDependencies": {
         "mocha": "*"
