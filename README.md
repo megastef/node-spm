@@ -34,7 +34,7 @@ spmcm.logEvent ('test1', 'High', 'this is an event message', 'testing is the eve
             done();
 })
 // send a log entry to Logsense, it automatically adds source (main module file), timestamp, hostname and IP
-spcm.log ('security', ['info','security], 'user stefan logged in', {user:stefan, source: 'web ui', action: 'login'})
+spcm.log ('security', ['info','security'], 'user stefan logged in', {user:stefan, source: 'web ui', action: 'login'})
 ```
 
 # Monitoring activity and errors
