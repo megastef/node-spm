@@ -16,7 +16,7 @@ npm install node-spm
 # Usage
 ```
 
-var SPM = require('../lib/index.js')
+var SPM = require('node-spm')
 // YOUR API TOKEN (SPM and Logsense)
 var token = {spm: process.env.SPM_TOKEN, logsense: process.env.LOGSENSE_TOKEN}
 
