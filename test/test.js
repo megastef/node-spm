@@ -1,7 +1,7 @@
 var assert = require("assert")
 
 var SPM = require('../lib/index.js')
-var token = {spm: process.env.SPM_TOKEN, logsense: process.env.LOGSENSE_TOKEN}
+var token = {spm: process.env.SPM_TOKEN, logsene: process.env.LOGSENE_TOKEN}
 
 describe("spm custom metrics ", function () {
     it("should pass", function (done) {
