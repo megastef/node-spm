@@ -18,7 +18,7 @@ npm install node-spm
 
 var SPM = require('node-spm')
 // YOUR API TOKEN (SPM and Logsene)
-var token = {spm: process.env.SPM_TOKEN, Logsene: process.env.LOGSENSE_TOKEN}
+var token = {spm: process.env.SPM_TOKEN, Logsene: process.env.LOGSENE_TOKEN}
 
 // create client, automatically log node.js memory and CPU usage every 30 seconds, 0 disables intervall transmission
 var spmcm = new SPM(token, 30000)
