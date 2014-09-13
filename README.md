@@ -22,7 +22,7 @@ var token = {spm: process.env.SPM_TOKEN, Logsene: process.env.LOGSENE_TOKEN}
 
 // create client, automatically log node.js memory and CPU usage every 30 seconds, 0 disables intervall transmission
 var spmcm = new SPM(token, 30000)
-// or collect process information when you need it ...
+//  collect process information when you need it ...
 spmcm.collectProcessMetrics()
 // or log your custom metrics, relevant for your application
 spmcm.add (new Date().getTime(), 'user.active',232,'server=server1')
