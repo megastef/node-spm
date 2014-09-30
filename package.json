@@ -1,7 +1,7 @@
 {
   "name": "node-spm",
-  "version": "1.0.10",
-  "description": "custom metrics API for SEMATEXT SPM ",
+  "version": "1.0.11",
+  "description": "Node.js client for Sematext SPM and Logsene.",
   "main": "lib/index.js",
   "directories": {
     "test": "test"
