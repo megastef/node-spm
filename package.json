@@ -18,7 +18,10 @@
     "Sematext",
     "performance",
     "monitoring",
-    "memwatch"
+    "memwatch",
+    "logging",
+    "Logsene",
+    "elasticsearch"
   ],
   "author": "Stefan Thies",
   "license": "MIT",
