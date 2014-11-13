@@ -1,5 +1,6 @@
 node-spm
 ========
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/megastef/node-spm?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Sematext Performance Monitoring - custom metrics and Logsene api client for node.js.
 It allows to send collected metrics to SPM, it collects automatically Node.js memory and OS memory.
