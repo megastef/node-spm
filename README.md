@@ -7,7 +7,7 @@ Sematext Performance Monitoring - Custom Metrics and Logsene API client for node
 Send custom metrics to SPM, it collects automatically Node.js memory and OS memory.
 In addition it provides the capability to send Events to SPM and logs to Logsene.
 
-Get an account and API token at [www.sematext.com](http://www.sematext.com)
+Get an account and API token at [www.sematext.com](https://apps.sematext.com/users-web/register.do)
 
 # Installation
 ```
