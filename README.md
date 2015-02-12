@@ -65,4 +65,4 @@ You can add event handlers for errors and actions
 
 
 Enjoy graphs and analytics of your application metrics  [http://sematext.com/spm/index.html](http://sematext.com/spm/index.html)
-and log files analysis [http://sematext.com/logsene/index.html](http://sematext.com/logsene/index.html)
+and log files [http://sematext.com/logsene/index.html](http://sematext.com/logsene/index.html)
