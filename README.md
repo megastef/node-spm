@@ -19,7 +19,7 @@ Get an account and API token at [www.sematext.com](http://www.sematext.com)
 
 ```
     var SPM = require('node-spm')
-    // YOUR API TOKEN (SPM and Logsene)
+    // YOUR API TOKEN (SPM and Logsene), e.g. from environment variables
     var token = {spm: process.env.SPM_TOKEN, logsene: process.env.LOGSENE_TOKEN}
 ```
 
@@ -31,37 +31,31 @@ Create client, automatically log node.js memory and CPU usage every 30 seconds, 
 
 Collect process information when you need it ...
 
-```
     spmClient.collectProcessMetrics()
-```
 
 Or log your custom metrics, relevant for your application
 
-```
     spmClient.add ('user.active',232,'server=server1','app=myapp.js')
-```
 
 Send the collected metrics to SPM
 
-```
-    spmcm.send()
-```
+    spmClient.send()
 
-// log an event to SPM Events
-spmClient.logEvent ('test1', 'High', 'this is an event message', 'testing is the event name', ['test', 'node-spm'], 'event source', 'this is any data as string or base64 encoded', function (err,res) {
+Log an event to SPM Events
+
+    spmClient.logEvent ('test1', 'High', 'this is an event message', 'testing is the event name', ['test', 'node-spm'], 'event     source', 'this is any data as string or base64 encoded', function (err,res) {
             console.log (res.body)
             done();
-})
+    })
 
-// send a log entry to Logsene, it automatically adds source (main module file), timestamp, hostname and IP
-spmClient.log ('security', ['info','security'], 'user stefan logged in', {user:stefan, source: 'web ui', action: 'login'})
-```
+Send a log entry to Logsene, it automatically adds source (main module file), timestamp, hostname and IP
+
+    spmClient.log ('security', ['info','security'], 'user stefan logged in', {user:stefan, source: 'web ui', action: 'login'})
+
 
 # Monitoring activity and errors
 
 You can add event handlers for errors and actions
-
-```
 
     spmClient.on ('error', console.log)  // outputs {err: 'an error', source: 'send'}
     spmClient.on ('add', console.log) // outputs datapoint added
@@ -69,7 +63,6 @@ You can add event handlers for errors and actions
     spmClient.on ('send event', console.log)
     spmClient.on ('log', console.log)
 
-```
 
 Enjoy graphs and analytics of your application metrics  [http://sematext.com/spm/index.html](http://sematext.com/spm/index.html)
 and log files analysis [http://sematext.com/logsene/index.html](http://sematext.com/logsene/index.html)
