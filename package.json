@@ -1,6 +1,6 @@
 {
   "name": "node-spm",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Node.js client for Sematext SPM and Logsene.",
   "main": "lib/index.js",
   "directories": {
@@ -18,10 +18,12 @@
     "Sematext",
     "performance",
     "monitoring",
-    "memwatch",
+    "APM",
     "logging",
     "Logsene",
-    "elasticsearch"
+    "elasticsearch",
+    "custom metrics",
+    "KPI"
   ],
   "author": "Stefan Thies",
   "license": "MIT",
