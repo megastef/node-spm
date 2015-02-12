@@ -42,16 +42,38 @@ Send the collected metrics to SPM
 
     spmClient.send()
 
-Log an event to SPM Events
+Add an event to SPM Events, callback is optional (see events of spmClient)
 
-    spmClient.logEvent ('test1', 'High', 'this is an event message', 'testing is the event name', ['test', 'node-spm'], 'event     source', 'this is any data as string or base64 encoded', function (err,res) {
+
+    /**
+     * Adds an Event to SPM
+     * Data structure according to https://sematext.atlassian.net/wiki/display/PUBSPM/Custom+Metrics
+     * @param {string} type of event
+     * @param {string} priority/level
+     * @param {string} message
+     * @param {string} name of the event
+     * @param {string} creator
+     * @param {string} data (base64 if binary)
+     */
+
+     // Example:
+     spmClient.logEvent ('app-event', 'info', 'started process', 'startup', ['test', 'node-spm'], 'created by app.js', 'this is any data as string or base64 encoded', function (err,res) {
             console.log (res.body)
-            done();
-    })
+      })
 
 Send a log entry to Logsene, it automatically adds source (main module file), timestamp, hostname and IP
 
-    spmClient.log ('security', ['info','security'], 'user stefan logged in', {user:stefan, source: 'web ui', action: 'login'})
+    /**
+     * Sending log entry  to LOGSENSE
+     * @type {string} typename of the log entry (e.g. 'security')
+     * @tags {string|array} any tag to be added to the log message (useful in LOGSENSE UI)
+     * @messageText {string} the actual log message
+     * @fields {object} additional fields to be added (e.g. source, hostname etc.)
+     * @callback {function} optional callback function
+     */
+
+      // Example:
+      spmClient.log ('security', ['info','security'], 'user stefan logged in', {user:stefan, source: 'web ui', action: 'login'})
 
 
 # Monitoring activity and errors
