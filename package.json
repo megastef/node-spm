@@ -1,6 +1,6 @@
 {
   "name": "node-spm",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Node.js client for Sematext SPM and Logsene.",
   "main": "lib/index.js",
   "directories": {
