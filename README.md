@@ -9,6 +9,9 @@ In addition it provides the capability to send Events to SPM and logs to Logsene
 
 Get an account and API token at [www.sematext.com](https://apps.sematext.com/users-web/register.do)
 
+# This module got replaced with the offical version: [spm-metrics-js](https://github.com/sematext/spm-metrics-js) 
+For logging to Logsene there will be in a few days [logsene-js](https://github.com/sematext/logsene-js)
+
 # Installation
 ```
     npm install node-spm
